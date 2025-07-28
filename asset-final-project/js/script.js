@@ -1,7 +1,3 @@
-function redirect() {
-  window.location.href = "homepage.html";
-}
-
 var div=document.getElementById('[id]');
 var display=0
 
