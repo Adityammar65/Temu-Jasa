@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temu Jasa</title>
+    <link rel="stylesheet" href="asset-final-project/css/homepage.css">
+    <script src="asset-final-project/js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-item">
+            <span class="logo">
+                <img src="asset-final-project/img/logoo_putih.png">
+            </span>
+            <h2>Temu Jasa</h2>
+            <span class="img-container">
+                <a href="#">
+                    <img src="asset-final-project/img/portrait-white-man-isolated.jpg">
+                </a>
+            </span>
+        </div>
+        <hr>
+        <div class="navbar">
+            <ul>
+                <li class="active">
+                    <a href="#" onclick="toggleDiv('alert')">Beranda</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleDiv('alert')">Cari Jasa</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleDiv('alert')">Riwayat</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleDiv('alert')">Notifikasi</a>
+                </li>
+            </ul>
+        </div>
+        <div class="body-container">
+            <div class="login-container">
+                <div class="halaman-login">
+                    <div class="welcome">
+                        <h2>Selamat datang di Temu Jasa</h2><br>
+                        <div class="login-daftar">
+                            <a href="#" class="login" onclick="toggleDiv('login')">Login</a>
+                            <a href="#" class="daftar" onclick="toggleDiv('daftar')">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="asset-final-project/img/homepage.jpg">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <section class="sambutan">
+        <h2>Selamat Datang di Temu Jasa!</h2>
+        <p>Temu Jasa adalah platform pemesanan jasa digital yang menghubungkan kamu dengan para profesional dari
+            berbagai bidang. Mulai dari desain, penulisan, penerjemahan, pelatihan online, hingga jasa programming,
+            semuanya tersedia dalam satu tempat.</p>
+
+        <h3>Mengapa memilih Temu Jasa?</h3>
+        <ul class="alasan">
+            <li>✔️ Akses ke penyedia jasa yang telah diverifikasi dan terpercaya</li>
+            <li>✔️ Proses pencarian & pemesanan yang mudah dan cepat</li>
+            <li>✔️ Sistem ulasan & rating transparan untuk bantu pengambilan keputusan</li>
+            <li>✔️ Komunikasi langsung dengan penyedia jasa sebelum transaksi</li>
+            <li>✔️ Pembayaran aman dan hanya diteruskan setelah pekerjaan selesai</li>
+        </ul>
+
+        <p>Bergabunglah sekarang dan mulai temukan solusi terbaik untuk kebutuhan jasamu!</p>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column brand">
+                <img src="asset-final-project/img/logoo_putih.png" alt="logo" class="footer-logo">
+                <h3>Naikkan Level Bisnismu!</h3>
+                <p>Platform edukasi interaktif untuk membantu UMKM lokal belajar bisnis secara mandiri, gratis, dan
+                    efektif.</p>
+            </div>
+            <div class="footer-content-columns" style="display: flex; gap: 40px;">
+                <div class="footer-column">
+                    <h4>Navigasi</h4>
+                    <div class="footer-content">
+                        <a href="#">Beranda</a>
+                        <a href="#">Tentang Kami</a>
+                        <a href="#">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Materi</h4>
+                    <div class="footer-content">
+                        <a href="#">Pemasaran Digital</a>
+                        <a href="#">Panduan Memulai</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Media Sosial</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img src="asset-final-project/img/icon/facebook.png">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="asset-final-project/img/icon/instagram.png">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="asset-final-project/img/icon/twitter.png">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="asset-final-project/img/icon/linkedin.png">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="asset-final-project/img/icon/youtube.png">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Kontak</h4>
+                <div class="kontak-item">
+                    <span class="label">Email</span>
+                    <span class="value">temu-jasa-support@gmail.com</span>
+                </div>
+                <div class="kontak-item">
+                    <span class="label">Telepon</span>
+                    <span class="value">+62 878 9890 66676</span>
+                </div>
+                <div class="kontak-item">
+                    <span class="label">Lokasi</span>
+                    <span class="value">Yogyakarta, Indonesia</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Temu Jasa. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Bantuan</a>
+            </div>
+        </div>
+    </footer>
+    <div id="login" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Form Login</h3>
+            <p>Silakan isi detail akun Anda di sini.</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <div class="button-container">
+                <a href="homepage-logged-in.html" class="login">Login</a>
+                <a href="#" onclick="toggleDiv('login')" class="batal">Batal</a>
+            </div>
+        </div>
+    </div>
+    <div id="daftar" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Form Daftar</h3>
+            <p>Silakan isi detail profil Anda di sini.</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <div class="button-container">
+                <a href="homepage-logged-in.html" class="daftar">Daftar</a>
+                <a href="#" onclick="toggleDiv('daftar')" class="batal">Batal</a>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p>Silakan login atau daftar terlebih dahulu</p>
+            <div class="button-container">
+                <a href="#" onclick="toggleDiv('alert'); toggleDiv('login')" class="login">Login</a>
+                <a href="#" onclick="toggleDiv('alert'); toggleDiv('daftar')" class="daftar">Daftar</a>
+                <a href="#" onclick="toggleDiv('alert')" class="batal">Batal</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

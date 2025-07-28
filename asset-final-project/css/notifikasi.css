@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .container-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.container-item .logo {
+    padding: 15px;
+    align-self: center;
+}
+
+.container-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #7c97df;
+    border-radius: 999px;
+}
+
+.header span {
+    width: 70px;
+}
+
+.header .img-container {
+    width: 70px;
+    padding: 15px;
+}
+
+.header .img-container img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 85px;
+    background-color: #1e3a8a;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    font-size: 15px;
+    list-style: none;
+    align-content: center;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .active {
+    color: white;
+    text-decoration: none;
+    background-color: #4167cf;
+}
+
+hr {
+    margin: 0;
+}
+
+h3 {
+    margin: 24px;
+}
+
+.space {
+    width: 95%;
+    margin: 16px 32px;
+    height: 2px;
+    background-color: #1e3a8a;
+}
+
+.notifikasi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24px;
+    padding: 16px;
+    background-color: #C7D1EC;
+    border-left: 5px solid #007bff;
+    border-right: 5px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.notifikasi:hover {
+    background-color: #d0e6ff;
+}
+
+.notifikasi img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.notifikasi p {
+    margin: 0;
+    padding: 8px 24px;
+    align-self: center;
+}
+
+/* RESPONSIVE UNTUK MOBILE */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        margin: 0;
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+
+    .header .container-item {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+        margin: 4px 0;
+    }
+
+    .container-item img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 6px;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        font-size: 0.8rem;
+        padding: 4px 6px;
+        flex-shrink: 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 6px 8px;
+    }
+
+    .space {
+        margin: 16px auto;
+        width: 90%;
+    }
+
+    .notifikasi {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .notifikasi img {
+        margin-bottom: 10px;
+    }
+
+    .notifikasi p {
+        padding: 0;
+    }
+}

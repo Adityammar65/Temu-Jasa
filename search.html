@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Jasa</title>
+    <link rel="stylesheet" href="asset-final-project/css/search.css">
+    <script src="asset-final-project/js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-item">
+            <span class="logo">
+                <img src="asset-final-project/img/logoo_putih.png">
+            </span>
+            <h2>Temu Jasa</h2>
+            <span class="img-container">
+                <a href="homepage.html">
+                    <img src="asset-final-project/img/portrait-white-man-isolated.jpg">
+                </a>
+            </span>
+        </div>
+        <hr>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="homepage-logged-in.html">Beranda</a>
+                </li>
+                <li class="active">
+                    <a href="#">Cari Jasa</a>
+                </li>
+                <li>
+                    <a href="Riwayat.html">Riwayat</a>
+                </li>
+                <li>
+                    <a href="notifikasi.html">Notifikasi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-section">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari"
+                onkeyup="filterDivsBySearch('searchInput', 'card-search', 'text')">
+        </div>
+    </div>
+    <h2>Rekomendasi Jasa Untukmu</h2>
+    <div class="body-container">
+        <a href="#" class="shortcut" onclick="toggleDiv('website')">
+            <div class="card">
+                <img src="asset-final-project/img/designer2.jpg">
+                <div class="text">
+                    <span class="jasa-owner">KreasiKita</span>
+                    <span class="jasa-title">Jasa Design Grafis</span>
+                    <p>Dengan menggunakan desain visual yang kuat dan bermakna, Anda dapat menghidupkan gagasan Anda.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('editing')">
+            <div class="card">
+                <img src="asset-final-project/img/video-editor.jpg">
+                <div class="text">
+                    <span class="jasa-owner">MediaCreative</span>
+                    <span class="jasa-title">Jasa Editing Video</span>
+                    <p>Kami ubah footage Anda menjadi cerita visual yang mengesankan dan profesional.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('design')">
+            <div class="card">
+                <img src="asset-final-project/img/designer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">StudioMandiri</span>
+                    <span class="jasa-title">Jasa Design Grafis</span>
+                    <p>Menghidupkan ide Anda melalui desain visual yang kuat dan bermakna.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('website')">
+            <div class="card">
+                <img src="asset-final-project/img/software-developer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Jasawebsites</span>
+                    <span class="jasa-title">Jasa Pembuatan Website</span>
+                    <p>Mengembangkan situs web yang Anda impikan yang cepat, responsif, dan penuh dengan konten.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <h2>Hasil Pencarian</h2>
+    <div class="body-container">
+        <a href="#" class="shortcut" onclick="toggleDiv('website')">
+            <div class="card-search">
+                <img src="asset-final-project/img/software-developer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Prolancer</span>
+                    <span class="jasa-title">Jasa Pembuatan Website</span>
+                    <p>Bangun website impian Anda! cepat, responsif, dan penuh karakter.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('design')">
+            <div class="card-search">
+                <img src="asset-final-project/img/designer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">StudioMandiri</span>
+                    <span class="jasa-title">Jasa Design Grafis</span>
+                    <p>Menghidupkan ide Anda melalui desain visual yang kuat dan bermakna.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('editing')">
+            <div class="card-search">
+                <img src="asset-final-project/img/video-editor.jpg">
+                <div class="text">
+                    <span class="jasa-owner">MediaCreative</span>
+                    <span class="jasa-title">Jasa Editing Video</span>
+                    <p>Kami ubah footage Anda menjadi cerita visual yang mengesankan dan profesional.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('website')">
+            <div class="card-search">
+                <img src="asset-final-project/img/software-developer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Jasawebsites</span>
+                    <span class="jasa-title">Jasa Pembuatan Website</span>
+                    <p>Mengembangkan situs web yang Anda impikan yang cepat, responsif, dan penuh dengan konten.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('editing')">
+            <div class="card-search">
+                <img src="asset-final-project/img/video-editor2.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Freelinked</span>
+                    <span class="jasa-title">Jasa Editing Video</span>
+                    <p>Kami mengubah video Anda menjadi cerita visual yang menakjubkan dan berkualitas tinggi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('design')">
+            <div class="card-search">
+                <img src="asset-final-project/img/designer2.jpg">
+                <div class="text">
+                    <span class="jasa-owner">KreasiKita</span>
+                    <span class="jasa-title">Jasa Design Grafis</span>
+                    <p>Dengan menggunakan desain visual yang kuat dan bermakna, Anda dapat menghidupkan gagasan Anda.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('copywriting')">
+            <div class="card-search">
+                <img src="asset-final-project/img/copywriter.jpg">
+                <div class="text">
+                    <span class="jasa-owner">BitKarya</span>
+                    <span class="jasa-title">Jasa Copywriting</span>
+                    <p>Tulisannya menjual. Kata-katanya memikat. Konten yang bekerja untuk brand Anda.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('editing')">
+            <div class="card-search">
+                <img src="asset-final-project/img/audio-editor.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Creavolt Media</span>
+                    <span class="jasa-title">Jasa Audio Editing</span>
+                    <p>Dengar suara Anda lebih jernih, tajam, dan siap tayang di platform manapun.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('website')">
+            <div class="card-search">
+                <img src="asset-final-project/img/web-designer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">TalentaHub</span>
+                    <span class="jasa-title">Jasa Pembuatan Website</span>
+                    <p>Menghasilkan situs web yang Anda inginkan yang responsif, cepat, dan penuh konten.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('aplikasi')">
+            <div class="card-search">
+                <img src="asset-final-project/img/android-developer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Appka.ID</span>
+                    <span class="jasa-title">Jasa Pembuatan Aplikasi</span>
+                    <p>Kami bantu wujudkan aplikasi mobile Anda cepat, modern, dan user-friendly</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('aplikasi')">
+            <div class="card-search">
+                <img src="asset-final-project/img/desktop-developer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">Webina Studio</span>
+                    <span class="jasa-title">Jasa Pembuatan Aplikasi</span>
+                    <p>Aplikasi desktop tangguh untuk mendukung produktivitas bisnis Anda.</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="shortcut" onclick="toggleDiv('aplikasi')">
+            <div class="card-search">
+                <img src="asset-final-project/img/cloud-engineer.jpg">
+                <div class="text">
+                    <span class="jasa-owner">DeskTive</span>
+                    <span class="jasa-title">Jasa Pembuatan Aplikasi</span>
+                    <p>Bangun aplikasi cloud yang scalable dan siap untuk pasar digital masa depan.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="website" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Pemesanan Jasa Website</h3>
+            <p>Silahkan isi formulir pemesanan jasa</p>
+            <div class="form">
+                <input type="text" placeholder="Nama untuk Project jasa yang dipesan">
+                <input type="text" placeholder="Jenis Website">
+                <select>
+                    <option>Pilih Platform</option>
+                    <option>Desktop</option>
+                    <option>Mobile</option>
+                    <option>Web</option>
+                </select>
+            </div>
+            <a href="#" onclick="toggleDiv('website')">Batal</a>
+            <a href="#" onclick="pesanJasa(); toggleDiv('website')">Pesan Jasa</a>
+        </div>
+    </div>
+    <div id="aplikasi" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Pemesanan Jasa Aplikasi</h3>
+            <p>Silahkan isi formulir pemesanan jasa</p>
+            <div class="form">
+                <input type="text" placeholder="Nama untuk Project jasa yang dipesan">
+                <input type="text" placeholder="Jenis Aplikasi">
+                <select>
+                    <option>Pilih Platform</option>
+                    <option>Desktop</option>
+                    <option>Mobile</option>
+                    <option>Web</option>
+                </select>
+            </div>
+            <a href="#" onclick="toggleDiv('aplikasi')">Batal</a>
+            <a href="#" onclick="pesanJasa(); toggleDiv('aplikasi')">Pesan Jasa</a>
+        </div>
+    </div>
+    <div id="editing" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Pemesanan Jasa Editing</h3>
+            <p>Silahkan isi formulir pemesanan jasa</p>
+            <div class="form">
+                <input type="text" placeholder="Nama untuk Project jasa yang dipesan">
+                <input type="text" placeholder="Tema Project">
+                <select>
+                    <option>Pilih Media</option>
+                    <option>Video</option>
+                    <option>Audio</option>
+                </select>
+            </div>
+            <a href="#" onclick="toggleDiv('editing')">Batal</a>
+            <a href="#" onclick="pesanJasa(); toggleDiv('editing')">Pesan Jasa</a>
+        </div>
+    </div>
+    <div id="design" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Pemesanan Jasa Design</h3>
+            <p>Silahkan isi formulir pemesanan jasa</p>
+            <div class="form">
+                <input type="text" placeholder="Nama untuk Project jasa yang dipesan">
+                <input type="text" placeholder="Tema Project">
+                <select>
+                    <option>Pilih Media</option>
+                    <option>Logo</option>
+                    <option>Gambar</option>
+                    <option>Poster</option>
+                </select>
+            </div>
+            <a href="#" onclick="toggleDiv('design')">Batal</a>
+            <a href="#" onclick="pesanJasa(); toggleDiv('design')">Pesan Jasa</a>
+        </div>
+    </div>
+    <div id="copywriting" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Pemesanan Jasa Design</h3>
+            <p>Silahkan isi formulir pemesanan jasa</p>
+            <div class="form">
+                <input type="text" placeholder="Nama untuk Project jasa yang dipesan">
+                <input type="text" placeholder="Tema Project">
+                <input type="text" placeholder="Isi Konten">
+            </div>
+            <a href="#" onclick="toggleDiv('copywriting')">Batal</a>
+            <a href="#" onclick="pesanJasa(); toggleDiv('copywriting')">Pesan Jasa</a>
+        </div>
+    </div>
+</body>
+
+</html>

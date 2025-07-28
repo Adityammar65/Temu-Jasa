@@ -1,0 +1,768 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .container-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.container-item .logo {
+    padding: 15px;
+    align-self: center;
+}
+
+.container-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #7c97df;
+    border-radius: 999px
+}
+
+.header hr {
+    margin: 0;
+}
+
+.header span {
+    width: 70px;
+}
+
+.header .img-container {
+    width: 70px;
+    padding: 15px;
+}
+
+.header .img-container img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 85px;
+    background-color: #1e3a8a;
+}
+
+.navbar ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    font-size: 15px;
+    list-style: none;
+    align-content: center;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .active {
+    color: white;
+    text-decoration: none;
+    background-color: #4167cf;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    padding: 15px;
+}
+
+.body-container .login-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.body-container .halaman-login .welcome {
+    margin-top: 105px;
+}
+
+.body-container .login-container .halaman-login a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #F97316;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.body-container .login-container .halaman-login a:hover {
+    background-color: #ffa86a;
+    animation-name: 'fade';
+    animation-duration: 1ms;
+}
+
+.body-container .halaman-login .login-daftar {
+    justify-self: center;
+}
+
+.body-container .img-container img {
+    width: 450px;
+    height: auto;
+    object-fit: fill;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/homepage-sambutan.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-content h2 {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.hero .hero-content p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.hero .hero-content a {
+    display: inline-block;
+    background-color: #F97316;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.hero .hero-content a:hover {
+    background-color: #ff9a4d;
+}
+
+.layanan {
+    background-color: #ffffff;
+    padding: 48px 20px;
+    margin: 32px 0;
+}
+
+.layanan .content-layanan {
+    max-width: 900px;
+    margin: auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+.space {
+    width: 95%;
+    margin: 16px 32px;
+    height: 2px;
+    background-color: #1e3a8a;
+}
+
+.fitur {
+    background-color: #ffffff;
+    padding: 48px 20px;
+}
+
+.fitur .unggulan {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 32px;
+}
+
+.fitur .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.fitur .content-fitur {
+    background-color: white;
+    padding: 24px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.fitur .content-fitur:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.fitur .content-fitur span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e3a8a;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.fitur .content-fitur p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.artikel {
+    margin: 32px auto;
+    padding: 16px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artikel h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+.artikel a {
+    display: block;
+    background-color: white;
+    margin: 8px auto;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #1e3a8a;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.artikel a:hover {
+    background-color: #e0ecff;
+    transform: translateY(-2px);
+}
+
+/* === Popup Overlay === */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* === Popup Box === */
+.popup-content {
+    background-color: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.popup-content h3 {
+    font-size: 22px;
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+
+.popup-content p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline-color: #4167cf;
+    box-sizing: border-box;
+}
+
+/* === Tombol Aksi === */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.popup-content .login,
+.popup-content .batal,
+.popup-content .daftar {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.popup-content .login {
+    background-color: #F97316;
+}
+
+.popup-content .login:hover {
+    background-color: #ffa86a;
+}
+
+.popup-content .daftar {
+    background-color: #F97316;
+}
+
+.popup-content .daftar:hover {
+    background-color: #ffa86a;
+}
+
+.popup-content .batal {
+    background-color: #e53935;
+}
+
+.popup-content .batal:hover {
+    background-color: #ff7a70;
+}
+
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    width: fit-content;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 12px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin: 6px 0;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.footer-column a:hover {
+    color: #5283ff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #5283ff;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.kontak-item {
+    display: flex;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.kontak-item .label {
+    width: 70px;
+    font-weight: bold;
+}
+
+.kontak-item .value {
+    color: #ddd;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+}
+
+.footer-links a {
+    margin-left: 16px;
+    color: #ccc;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #5283ff;
+}
+
+.sambutan {
+    background-color: #f1f5ff;
+    padding: 32px 24px;
+    margin: 40px auto;
+    border-radius: 12px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sambutan h2 {
+    font-size: 26px;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+}
+
+.sambutan h3 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #F97316;
+}
+
+.sambutan p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.sambutan .alasan {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sambutan .alasan li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        margin: 0;
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+
+    .header .container-item {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+        margin: 4px 0;
+    }
+
+    .container-item img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 6px;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        font-size: 0.8rem;
+        padding: 4px 6px;
+        flex-shrink: 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 6px 8px;
+    }
+
+    .body-container {
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    .body-container .login-container{
+        gap: 0;
+    }
+
+    .welcome{
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-daftar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 24px 0;
+    }
+
+    .login-container .img-container{
+        width: fit-content;
+        padding: 0;
+    }
+
+    .login-container .img-container img{
+        width: 150px ;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .btn-login,
+    .btn-daftar {
+        width: 90%;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .halaman-login .welcome h2 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .login-daftar a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 4px;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero {
+        width: fit-content;
+        background-image: url('../img/homepage-sambutan.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero-content {
+        width: fit-content !important;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+        margin: 4px 0;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        margin: 4px 8px;
+    }
+
+    .hero a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 12px auto;
+    }
+
+    .layanan .content-layanan p,
+    .fitur .content-fitur p {
+        font-size: 0.9rem;
+    }
+
+    .fitur .wrapper {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .content-fitur span {
+        font-size: 1rem;
+    }
+
+    .artikel h3 {
+        font-size: 1.1rem;
+    }
+
+    .artikel a {
+        font-size: 0.9rem;
+        margin: 4px 0;
+    }
+
+    .testimoni {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .testi-item p {
+        font-size: 0.9rem;
+    }
+
+    .testi-item span {
+        font-size: 0.8rem;
+    }
+
+    .popup-content {
+        width: 95%;
+        padding: 16px;
+    }
+
+    .popup-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .popup-content p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .popup-content input {
+        width: 100%;
+        margin: 6px 0;
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+
+    .popup-content .button-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .popup-content a {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        padding-top: 16px;
+    }
+
+}
